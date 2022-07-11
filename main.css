@@ -10780,6 +10780,9 @@ textarea.rs-picker-search-input {
 .rs-picker-subtle.rs-picker-disabled .rs-picker-toggle:active::after {
   display: none;
 }
+.rs-picker-toggle-label {
+  color: var(--rs-text-primary);
+}
 .rs-picker-toggle-value {
   display: block;
   overflow: hidden;
