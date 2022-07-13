@@ -15503,6 +15503,11 @@ textarea.rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input {
   --rs-border-primary: #e5e5ea;
   --rs-text-primary: #575757;
 }
+.rcv-render,
+.react-code-view-error {
+  min-height: 60px;
+  margin: 0;
+}
 
 
 /*# sourceMappingURL=main.css.map*/
