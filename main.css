@@ -4289,20 +4289,6 @@ label:hover .rs-checkbox-wrapper .rs-checkbox-inner::before {
   padding: 12px;
   border-top: 1px solid var(--rs-border-primary);
 }
-.rs-picker-toolbar::before,
-.rs-picker-toolbar::after {
-  content: ' ';
-  display: table;
-}
-.rs-picker-toolbar::after {
-  clear: both;
-}
-.rs-picker-toolbar-ranges {
-  display: inline-block;
-}
-.rs-picker-toolbar-right {
-  float: right;
-}
 .rs-picker-date-inline {
   height: 299px;
 }
@@ -4377,7 +4363,7 @@ label:hover .rs-checkbox-wrapper .rs-checkbox-inner::before {
 }
 .rs-picker-daterange-menu .rs-calendar {
   display: inline-block;
-  height: 278px;
+  height: 276px;
   padding-bottom: 12px;
 }
 .rs-picker-daterange-menu .rs-calendar:first-child {
@@ -4395,9 +4381,6 @@ label:hover .rs-checkbox-wrapper .rs-checkbox-inner::before {
 }
 .rs-picker-daterange-menu .rs-calendar-month-dropdown-list {
   width: 185px;
-}
-.rs-picker-daterange-menu .rs-picker-toolbar {
-  margin-top: 4px;
 }
 .rs-picker-daterange-menu .rs-picker-daterange-panel-show-one-calendar .rs-picker-toolbar {
   max-width: 255px;
@@ -4419,6 +4402,14 @@ label:hover .rs-checkbox-wrapper .rs-checkbox-inner::before {
 .rs-picker-daterange-calendar-group {
   height: 274px;
   min-width: 492px;
+}
+.rs-picker-daterange-predefined {
+  height: 366px;
+  border-right: 1px solid var(--rs-border-primary);
+  padding: 4px 0;
+}
+.rs-picker-daterange-predefined .rs-btn {
+  display: block;
 }
 .rs-divider {
   background-color: var(--rs-divider-border);
@@ -7727,7 +7718,10 @@ textarea.rs-input-sm {
   top: 0;
   background: none;
   border: none;
-  padding: 11px 13px 8px 13px;
+  padding: 10px 13px;
+}
+.rs-input-group.rs-input-group-inside .rs-input-group-addon.rs-input-group-btn {
+  padding: 8px 13px;
 }
 .rs-input-group.rs-input-group-inside .rs-input-group-btn ~ input.rs-input,
 .rs-input-group.rs-input-group-inside .rs-input-group-addon ~ input.rs-input,
@@ -10178,6 +10172,7 @@ textarea.rs-picker-search-input {
   padding-right: 32px;
   color: var(--rs-text-primary);
   background-color: var(--rs-input-bg);
+  outline: none;
 }
 .rs-picker-toggle.rs-btn-lg .rs-picker-toggle-textbox {
   padding-left: 14px;
@@ -10190,7 +10185,6 @@ textarea.rs-picker-search-input {
 }
 .rs-picker-toggle-read-only {
   opacity: 0;
-  pointer-events: none;
 }
 .rs-picker-default .rs-btn,
 .rs-picker-default .rs-picker-toggle {
